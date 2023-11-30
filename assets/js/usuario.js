@@ -81,7 +81,7 @@ async function editarComentario(id) {
 }
 
 function renderizarUsuario(usuario) {
-  // const $inputUsuarioImagem = document.getElementById("inputUsuarioImagem");
+  const $inputUsuarioImagem = document.getElementById("inputUsuarioImagem");
   const $inputUsuarioNome = document.getElementById("inputUsuarioNome");
   const $usuarioImagem = document.querySelectorAll(".usuario-image");
   const $usuarioNome = document.querySelectorAll(".usuario-name");
@@ -92,7 +92,7 @@ function renderizarUsuario(usuario) {
   $usuarioSobre.forEach(
     ($el) => ($el.innerText = usuario.sobre || "Nenhuma informação.")
   );
-  // $inputUsuarioImagem.value = usuario.foto;
+  $inputUsuarioImagem.value = usuario.foto;
   $inputUsuarioNome.value = usuario.nome;
 }
 

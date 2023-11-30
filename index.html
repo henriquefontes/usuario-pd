@@ -171,16 +171,6 @@
         <form id="editProf">
           <i class="bx bx-x modal-close-button"></i>
           <h3 class="modal-title">Editar Perfil</h3>
-          <div class="usuario-image-container modal-usuario-image-container">
-            <img
-              src="https://images.unsplash.com/photo-1551808525-51a94da548ce?auto=format&fit=crop&q=80&w=1407&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-              class="usuario-image usuario-image-edit"
-            />
-            <div class="edit-icon-container">
-              <i class="bx bxs-camera"></i>
-            </div>
-          </div>
           <div class="modal-input-container" data-visible="user-only">
             <input
               type="text"
@@ -190,6 +180,16 @@
               style="font-size: revert; font-weight: revert; text-align: revert"
             />
             <label for="nome">Nome</label>
+            <i class="bx bx-link modal-input-icon"></i>
+          </div>
+          <div class="modal-input-container">
+            <input
+              type="text"
+              name="foto"
+              class="modal-input"
+              id="inputUsuarioImagem"
+            />
+            <label for="foto">URL da Foto</label>
             <i class="bx bx-link modal-input-icon"></i>
           </div>
           <div class="modal-input-container">
