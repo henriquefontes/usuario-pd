@@ -181,6 +181,7 @@ async function carregarPagina() {
   // Remover isso na sprint 4
   if (!id) {
     window.location.href = "?id=10";
+    return;
   }
 
   if (!usuario) {
